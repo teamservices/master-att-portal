@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+    
+<hibernate-configuration>
+<session-factory>
+	
+
+	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		destroy-method="close" p:driverClassName="${database.driver}"
+		p:url="${database.url}" p:username="${database.username}" p:password="${database.password}"
+		p:maxActive="${dbcp.maxActive}" p:maxIdle="${dbcp.maxIdle}" p:maxWait="${dbcp.maxWait}" /> -->
+
+   <property name="hibernate.connection.driver_class">${database.driver}</property>
+   <property name="hibernate.connection.url">${database.url}</property>
+   <property name="hibernate.connection.username">${database.username}</property>
+   <property name="hibernate.connection.password">${database.password}</property>
+ 
+</session-factory>
+</hibernate-configuration>
