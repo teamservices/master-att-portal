@@ -10,10 +10,7 @@
 </head>
 <body>
 	<center>
-
 		<div style="color: teal; font-size: 30px">Registration Form</div>
-
-
 
 		<c:url var="userRegistration" value="saveUser.html" />
 		<form:form id="registerForm" modelAttribute="employee" method="post"
@@ -42,7 +39,6 @@
 				</tr>
 			</table>
 		</form:form>
-
 
 		<a href="list">Click Here to see User List</a>
 	</center>

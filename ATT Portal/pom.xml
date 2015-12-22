@@ -16,7 +16,6 @@
 		<context.path>ATTPortal</context.path>
 	</properties>
 	<developers>
-
 		<developer>
 			<id>Team Sales Express</id>
 			<organization>accenture.com</organization>
@@ -29,7 +28,6 @@
 
 	<build>
 		<finalName>${pom.artifactId}</finalName>
-
 		<plugins>
 			<!-- Maven compiler plugin -->
 			<plugin>
@@ -47,7 +45,7 @@
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>
 		</dependency>
-<!-- Form Validation using Annotations --> 
+	<!-- Form Validation using Annotations --> 
    
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -76,8 +74,6 @@
 			<artifactId>spring-tx</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
-
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
@@ -128,23 +124,23 @@
 			<version>1.2</version>
 		</dependency>
 		
-<!-- Json dependency -->
-    <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-mapper-asl</artifactId>
-        <version>1.9.13</version>
-    </dependency>
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
-        <version>2.4.1</version>
-    </dependency>
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>2.4.1.1</version>
-    </dependency>
-    <!-- Json dependency -->
+		<!-- Json dependency -->
+	    <dependency>
+	        <groupId>org.codehaus.jackson</groupId>
+	        <artifactId>jackson-mapper-asl</artifactId>
+	        <version>1.9.13</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>com.fasterxml.jackson.core</groupId>
+	        <artifactId>jackson-core</artifactId>
+	        <version>2.4.1</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>com.fasterxml.jackson.core</groupId>
+	        <artifactId>jackson-databind</artifactId>
+	        <version>2.4.1.1</version>
+	    </dependency>
+	    <!-- Json dependency -->
 
 	</dependencies>
 </project>

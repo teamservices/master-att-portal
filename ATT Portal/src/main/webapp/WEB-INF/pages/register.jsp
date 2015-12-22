@@ -1,12 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Registration Form | www.beingjavaguys.com</title>
+<title>Registration Form</title>
 </head>
 <body>
 	<center>
 		<br /> <br /> <br />
-		<h1>Enter Login Details Here</h1>
+		<h1>Registration Page</h1>
 		<br />
 		<div style="text-align: center; padding: 30px;border: 1px solid green;width: 250px;">
 			<form method="post" action="register">

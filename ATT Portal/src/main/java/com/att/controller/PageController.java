@@ -1,9 +1,5 @@
 package com.att.controller;
 
-import com.att.domain.FunctionalArea;
-import com.att.domain.Platform;
-import com.att.services.PageService;
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.att.domain.Domains;
+import com.att.domain.FunctionalArea;
+import com.att.domain.Platform;
+import com.att.services.PageService;
 
 @Controller
 public class PageController {
@@ -41,11 +42,11 @@ public class PageController {
 		return pageService.getPlatformList(id);
 	}
 
-	// @RequestMapping(value = "/getDomains", method = RequestMethod.GET)
-	// public @ResponseBody List<Domains> getDomainsList(@RequestParam("id")
-	// String id) {
-	// return pageService.getDomainsList(id, pId);
-	// }
+	 @RequestMapping(value = "/getDomains", method = RequestMethod.GET)
+	 public @ResponseBody List<Domains> getDomainsList(@RequestParam("cId") String cId,
+			 @RequestParam("pId") String pId ) {
+	 return pageService.getDomainsList(cId, pId);
+	 }
 
 
 

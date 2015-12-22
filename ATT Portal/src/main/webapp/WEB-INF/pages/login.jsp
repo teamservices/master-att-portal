@@ -1,12 +1,12 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Login Form | www.beingjavaguys.com</title>
+<title>ATT Portal Login Form</title>
 </head>
 <body>
 	<center>
 		<br /> <br /> <br />
-		<h1>Login Here</h1>
+		<h1>Login</h1>
 		<br />
 		<div style="text-align: center; padding: 30px;border: 1px solid green;width: 250px;">
 			<form method="post" action="<c:url value='j_spring_security_check' />">
@@ -35,7 +35,6 @@
 				</table>
 			</form>
 			<br />
-			<a href="registerform">Register Here</a>
 		</div>
 	</center>
 </body>

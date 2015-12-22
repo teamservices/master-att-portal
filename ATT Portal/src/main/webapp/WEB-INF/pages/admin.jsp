@@ -2,7 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Admin Page | Lakshmi Diary Form</title>
+<title>Admin Page</title>
 </head>
 <body>
 <c:url value="/j_spring_security_logout" var="logoutUrl" />

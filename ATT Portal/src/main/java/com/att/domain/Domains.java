@@ -23,7 +23,7 @@ public class Domains implements Serializable {
 	private String id;
 
 	@Column(name = "NAME")
-	private String fName;
+	private String dName;
 
 	@Column(name = "DESCRIPTION")
 	private String description;
@@ -45,12 +45,12 @@ public class Domains implements Serializable {
 		this.id = id;
 	}
 
-	public String getfName() {
-		return fName;
+	public String getdName() {
+		return dName;
 	}
 
-	public void setfName(String fName) {
-		this.fName = fName;
+	public void setdName(String dName) {
+		this.dName = dName;
 	}
 
 	public String getDescription() {

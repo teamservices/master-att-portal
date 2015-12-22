@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Being Java Guys | Edit User Details</title>
+<title>Edit User Details</title>
 </head>
 <body>
 	<center>
