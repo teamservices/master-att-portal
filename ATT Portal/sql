@@ -1,0 +1,23 @@
+select * from classification
+select * from functional_area where c_id =1;
+select * from platform
+
+insert into classification (classification_id,name, c_id) values ('2','Tibbetts', '2')
+
+insert into functional_area (functional_id,name, c_id) values ('1','Strategy', '1');
+insert into functional_area (functional_id,name, c_id) values ('2','Consulting', '1');
+insert into functional_area (functional_id,name, c_id) values ('3','Operations', '1');
+insert into functional_area (functional_id,name, c_id) values ('4','Digital', '2');
+insert into functional_area (functional_id,name, c_id) values ('5','Technology', '2');
+
+insert into platform (PLATFORM_ID, name, p_id) values ('1','Technology Platforms, Operations & Global Customer Service(Lax)','1');
+insert into platform (PLATFORM_ID, name) values ('2','Core Business & Technology (Pope)');
+insert into platform (PLATFORM_ID, name) values ('3','Entertainment, Internet & International (Cook)');
+
+insert into domains (domains_id,NAME,C_ID, P_ID) values ('1','Technology Architecture -Lax','1,2','1');
+insert into domains (domains_id,NAME,C_ID, P_ID) values ('2','Digital Consumer','1','2');
+insert into domains (domains_id,NAME,C_ID, P_ID) values ('3','Corp Tech','2','2');
+
+
+
+
