@@ -2,7 +2,8 @@ select * from classification
 select * from functional_area where c_id =1;
 select * from platform
 
-insert into classification (classification_id,name, c_id) values ('2','Tibbetts', '2')
+insert into classification (classification_id,name, c_id) values ('1','Brown', '1');
+insert into classification (classification_id,name, c_id) values ('2','Tibbetts', '2');
 
 insert into functional_area (functional_id,name, c_id) values ('1','Strategy', '1');
 insert into functional_area (functional_id,name, c_id) values ('2','Consulting', '1');

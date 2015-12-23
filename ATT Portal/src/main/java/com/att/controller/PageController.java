@@ -48,6 +48,4 @@ public class PageController {
 	 return pageService.getDomainsList(cId, pId);
 	 }
 
-
-
 }

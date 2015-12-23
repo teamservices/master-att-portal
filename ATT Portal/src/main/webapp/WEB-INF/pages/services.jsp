@@ -22,9 +22,13 @@ h2 {
 <h2>Services offered by Accenture</h2>
  <b>Services to ATT has been classified into two groups. They are:</b>
 <c:forEach items="${catagory}" var="_cat">
+<!-- 				Displays classification lists -->
               <div class="clickable" data-classification="true" id="${_cat.cId}" style="color: brown;"><c:out value="${_cat.cName}" /></div>
+<!--               Displays Functional Ares List -->
               <div class="clickable" data-fnareas="true" id="cList_${_cat.cId}" style="color: blue;"></div>
+<!--               Displays Platform lists -->
               <div class="clickable" data-platform="true" id="pList_${_cat.cId}" style="color: red;"></div>
+<!--               Displays Domain Lists -->
               <div id="dList_${_cat.cId}" style="color: green;"></div>
 </c:forEach>
 </body>
@@ -88,6 +92,7 @@ h2 {
        function showPfList(response, cId){
           for ( var i = 0, len = response.length; i < len; ++i) {
                var pf = response[i];
+//                Need to check this  
                $('#pList_'+cId).append("<li id="+ pf.pId +">" + pf.pName+ "</li>");
               }
        }
@@ -116,7 +121,8 @@ h2 {
                var cId = this.id;
                var pId;
                cId = cId.split(/[_ ]+/).pop();
-               //TODO
+               //TODO : On click pId should be captured and displayed dynamycally.
+//                Backend functionality is implemented 
                getDomainList(cId,2);
         	}
    		});
